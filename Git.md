@@ -58,20 +58,6 @@ git reset HEAD <file> 将暂存区的修改撤销掉
 git rm test.txt 删除
 ```
 
-#### 远程仓库
-
-提交
-
- git remote add origin  加地址
-
- git push  -u  origin master 将本地分支master推送过去
-
-git add 
-
-git commit -m
-
- git push origin master  提交
-
 ##### 创建与合并分支
 
 ```txt
@@ -93,7 +79,7 @@ git checkout master
 git merge dev
 
 然后删除分支
-$ git branch -d dev
+$ git branch -d dev 
 
 git branch 查看所有分支 *表示当前分支
 发现只剩下一个分支了
@@ -121,12 +107,27 @@ git merge feature1 合并的时候冲突
 
 ```
 
-##### 分支管理
-
-##### bug分支
+##### 远程仓库
 
 ```txt
-创建临时分支
+github
+
+https://github.com/18437826577/git.git
+
+
+git push  -u  origin master 将本地分支master推送过去
+
+git add 
+
+git commit -m
+
+git push [地址] master  提交
+
+// 获取
+git pill [地址] master
+
+//
+git clone [地址]
 
 ```
 
