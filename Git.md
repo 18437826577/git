@@ -8,13 +8,16 @@ git config --global user.email "email@example.com"
 ```
 
 ```js
+//常用指令
 git init 	初始化，使文件夹变成仓库管理
 git add 文件名 	把文件添加到仓库
 git commit -m "说明" 	将文件提交到仓库
+
+git status 	 查看仓库与当前版本的区别
+```
+
 git status 	 查看仓库与当前版本的区别
 git diff	查看被修改的内容
-
-```
 
 ##### 版本回退
 
