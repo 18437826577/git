@@ -10,24 +10,33 @@ git config --global user.email "email@example.com"
 ```js
 //常用指令
 git init 	初始化，使文件夹变成仓库管理
-git add 文件名 	把文件添加到仓库
+git add 文件名 	把文件添加到仓库// ./选择所有文件
 git commit -m "说明" 	将文件提交到仓库
+git commit --all -m "说明"   将所有代码一次性操作
 
 git status 	 查看仓库与当前版本的区别
 ```
 
-git status 	 查看仓库与当前版本的区别
-git diff	查看被修改的内容
+##### 忽略文件
+
+```js
+.gitignore 文件
+
+/.idea
+/.gitignore
+```
 
 ##### 版本回退
 
 ```txt
 git log 查看所有版本 --pretty=oneline参数(简写)
+git log --oneline // 记录当前拥有的
+
 git reset --hard HEAD^ 回退至上一个版本
 git reset --hard HEAD^^回退两个版本
-git reset --hard HEAD~100回退100个版本
+git reset --hard HEAD 0~100回退100个版本
 
-git reflog 记录所以命令
+git reflog //记录所有的
 
 git reset --hard d38870e 指定版本
 
@@ -67,9 +76,10 @@ git commit -m
 
 ```txt
 git checkout -b dev 创建一个分支
+
 //相当于下面两条
 $ git branch dev//创建分支
-$ git checkout dev 
+$ git checkout dev // 切换至dev分支
 
 然后修改内容
 之后添加 提交
