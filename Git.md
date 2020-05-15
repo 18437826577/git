@@ -129,6 +129,14 @@ git pill [地址] master
 //
 git clone [地址]
 
+//配置远程地址
+git remote add origin url 
+
+//删除远程地址
+git remote rm origin
+
+git push -u origin master
+
 ```
 
 
