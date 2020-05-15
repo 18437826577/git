@@ -77,7 +77,6 @@ git commit -m
 ```txt
 git checkout -b dev 创建一个分支
 
-//相当于下面两条
 $ git branch dev//创建分支
 $ git checkout dev // 切换至dev分支
 
